@@ -155,6 +155,13 @@ form {
     font-weight: normal;
 }
 
+button {
+        background: #4aaaa5;
+        border: none;
+        color: #fff;
+        height: 30px;
+}
+
 hr {
     border-style: solid;
     border-color: #dddddd;
