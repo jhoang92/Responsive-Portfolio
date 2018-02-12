@@ -160,6 +160,13 @@ hr {
     border-color: #dddddd;
 }
 
+button {
+    background: #4aaaa5;
+    border: none;
+    color: #fff;
+    height: 30px;
+}
+
 @media screen and (max-width: 640px) {
     .info {
         background: #fff;
