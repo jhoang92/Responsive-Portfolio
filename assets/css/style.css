@@ -144,10 +144,10 @@ footer {
 }
 
 .portfolio {
-    float: center;
-    margin: auto 20px 20px 50px;
+    margin: auto 20px auto 20px;
     width: 200px;
     height: 200px;
+    display: inline-block;
 }
 
 form {
@@ -167,21 +167,13 @@ hr {
     border-color: #dddddd;
 }
 
-button {
-    background: #4aaaa5;
-    border: none;
-    color: #fff;
-    height: 30px;
-}
-
 .text-block {
     background: #4aaaa5;
     position: relative;
     bottom: 100px;
-    color: #fff;    
-    width: 300px;
-    height: 100px;
-    line-height: 50px;    
+    color: #fff;
+    width: 40%;
+    line-height: 50px;
 }
 
 @media screen and (max-width: 640px) {
