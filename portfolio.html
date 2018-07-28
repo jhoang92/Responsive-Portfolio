@@ -2,66 +2,110 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body background="assets/images/background.png">
 
-    <div class="top">  
-        <header class="name">John Hoang </header> 
-        
-            <nav>
-                <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html">About</a></li>
-                </ul>
-            </nav>
+    <div class="top">
+        <header class="name">John Hoang </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="wrapper">
+
+    <div class="container-fluid">
         <section class="infoport">
-            <h1>My portfolio</h1>
-
-            <hr>
-       
-            <a href="https://jhoang92.github.io/Psychic-game/"><img class="portfolio" id="psychic" src="assets/images/psychic.PNG" alt="psychic-game">
-                <div class="text-block"> 
-                    <h6>Psychic Game</h6>
-                </div></a>
-            
-            <a href="https://jhoang92.github.io/week4-crystals/"><img class="portfolio" id="crystals" src="assets/images/gems.jpg" alt="crystal collector">
-                <div class="text-block"> 
-                    <h6>Crystal Collector</h6></a>
+            <div class='col-8 mx-auto'>
+                <div id="carousel-highlights" class="carousel-slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="carousel-first" data-slide-to="0" class="active"></li>
+                        <li data-target="carousel-second" data-slide-to="1"></li>
+                        <li data-target="carousel-third" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class='d-block w-100' src="assets/images/soundfreq.png" alt="first-slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://obscure-brushlands-46712.herokuapp.com">
+                                    <h1>SoundFreq</h1>
+                                    <p>An online drum machine Built with node, mongo, express + more!!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class='d-block w-100' src="assets/images/giphy.PNG" alt="second-slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href "https://jhoang92.github.io/GiphyPage/">
+                                    <h1>Giphy Page</h1>
+                                    <p>Giphy Page uses AJAX calls to grab gifs online</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class='d-block w-100' src="assets/images/LIRI.png" alt="third-slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href "https://jhoang92.github.io/GiphyPage/">
+                                    <h1>LIRI</h1>
+                                    <p>LIRI is a CLI based application that uses MySQL to create a purchase shop</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#" role="button" data-slide="prev" onclick="$('#carousel-highlights').carousel('prev')">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">prev</span>
+                    </a>
+                    <a class="carousel-control-next" href="#" role="button" data-slide="next" onclick="$('#carousel-highlights').carousel('next')">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">next</span>
+                    </a>
                 </div>
-
-            <a href="https://jhoang92.github.io/triviagame/"><img class="portfolio" id="trivia" src="assets/images/trivia.png" alt="Trivia Bonanza">
-                <div class="text-block">
-                <h6>Trivia Bonanza</h6></a>
-                </div>
-
-            <a href="https://jhoang92.github.io/GiphyPage/"><img class="portfolio" id="trivia" src="assets/images/giphy.png" alt="GIPHY API">
-                <div class="text-block">
-                <h6>GIPHY api</h6></a>
+            </div>
         </section>
 
         <section class="side">
             <h2>Connect with Me!</h2>
-                <hr>
-                <br>
-            <a href="https://github.com/jhoang92"> <img src="assets/images/github.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/jhoang92"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://stackoverflow.com/users/9154747/john-hoang?tab=profile"> <img src="assets/images/stacked.png" alt="StackOverflow"></a>
+            <hr>
+            <br>
+            <a href="https://github.com/jhoang92">
+                <img src="assets/images/github.png" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/jhoang92">
+                <img src="assets/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://stackoverflow.com/users/9154747/john-hoang?tab=profile">
+                <img src="assets/images/stacked.png" alt="StackOverflow">
+            </a>
         </section>
 
     </div>
 
-    <footer><br>
-        &copy; Copyright2018 John Hoang</footer>
+    <footer>
+        <br> &copy; Copyright2018 John Hoang</footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
